@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import style from './style'
 
-class CommentForm extends Component {
+class InputForm extends Component {
   constructor(props) {
     super(props)
     this.state = { author: '', text: '' }
@@ -27,21 +27,21 @@ class CommentForm extends Component {
     return(
       <form style={ style.bookForm } onSubmit={ this.handleSubmit }>
         <input
-          type=’text’
-          placeholder=’Input The Author’
+          type='text'
+          placeholder='Input The Author'
           style={ style.inputFormAuthor}
           value={ this.state.author }
           onChange={ this.handleAuthorChange } />
         <input
-          type=’text’
-          placeholder=’Input the Book Title’
+          type='text'
+          placeholder='Input the Book Title'
           style={ style.inputFormText}
           value={ this.state.text }
           onChange={ this.handleTextChange } />
         <input
-          type=’submit’
+          type='submit'
           style={ style.inputFormPost }
-          value=’Post’ />
+          value='Post' />
       </form>
     )
   }

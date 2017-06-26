@@ -1,8 +1,8 @@
 import React from 'react'
-import ReactDOM from 'reacer-dom'
+import ReactDOM from 'react-dom'
 import InputBox from './InputBox'
 
 ReactDOM.render(
   <InputBox />,
-  dosument.getElementbyId('root')
+  document.getElementById('root')
 )
